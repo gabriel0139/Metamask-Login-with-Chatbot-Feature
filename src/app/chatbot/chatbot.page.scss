@@ -1,0 +1,127 @@
+.ChatbotTitle {
+  text-align: center;
+}
+
+/* Ensure input-container stays at the bottom */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between; /* Pushes chat and input to opposite ends */
+}
+
+/* Ensure the chat-responses container does not overflow the viewport */
+.chat-responses {
+  flex-grow: 1;
+  overflow-y: auto; /* Makes chat scrollable */
+  display: flex;
+  flex-direction: column; /* Messages start from the top */
+  padding: 1em;
+  margin-bottom: 100px; /* Height of the input container plus some space */
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ion-item {
+  flex-grow: 1;
+}
+
+ion-button {
+  margin-left: 0.5em; /* Space between input and button */
+}
+
+.message-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em; /* Space between messages */
+}
+
+.user-message {
+  justify-content: flex-end; /* Aligns user message to the right */
+}
+
+/* You may remove order style from .user-message span */
+.user-message {
+  span {
+    padding: 0.5em;
+    border-radius: 1em;
+    max-width: 70%; /* Adjust as needed */
+  }
+
+  @media (prefers-color-scheme: light) {
+    span {
+      background: #dcf8c6; /* WhatsApp-like green background for user messages */
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    span {
+      background: #58a81b; /* WhatsApp-like green background for user messages */
+    }
+  }
+}
+
+/* Style for the Darkmode/Lightmode chatbot messages */
+.message-container:not(.user-message) {
+  justify-content: flex-start; /* Aligns chatbot message to the left */
+  span {
+    padding: 0.5em;
+    border-radius: 1em;
+    max-width: 70%; /* Adjust as needed */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    span {
+      background: #202020; /* Different background for chatbot messages */
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    span {
+      background: #f0f0f0; /* Different background for chatbot messages */
+    }
+  }
+}
+
+.chatbot-image {
+  width: 30px; /* Adjust the size as needed */
+  height: auto;
+  // margin-right: 8px;
+}
+
+/* Ensure toolbar text is centered and has the correct colors */
+ion-toolbar {
+  --background: #0c4859; /* Your desired shade of blue */
+  --color: #f9faf4; /* Text color in the header */
+  justify-content: center;
+}
+
+.typing-indicator-container {
+  justify-content: flex-start; /* Or 'flex-end' if you want it to the right */
+}
+
+.typing-indicator {
+  height: 75px; /* Adjust the size as needed */
+  width: 50px; /* Adjust the width as needed */
+  background: transparent; /* Assuming your GIF has transparency */
+  margin-left: 10px; /* Add some space if it's on the left side */
+  /* Remove margin if the indicator should be on the right side */
+}
+
+.messageDate {
+  position: relative; /* Absolute positioning */
+  right: 5px; /* Positioned at the right of the parent */
+  padding-top: 2.5rem;
+  padding-left: 10px;
+  color: rgb(214, 210, 210);
+  font-size: small;
+}
+
+.messageContent {
+  font-size: large;
+  padding-right: 20px;
+}

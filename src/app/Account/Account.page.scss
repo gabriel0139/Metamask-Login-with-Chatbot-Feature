@@ -1,0 +1,89 @@
+.profile-header {
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+
+.profile-pic-container {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: auto;
+}
+
+.reward-progress {
+  background: #fff;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.next-reward {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem ;
+  color: #fff;
+}
+
+/* Adjust ion-list-header to match the alignment */
+ion-list-header {
+  --inner-border-width: 0;
+  --padding-start: 16px; /* Adjust this value to align with the items */
+  --padding-end: 0;
+  --min-height: 0;
+}
+
+/* Ensure all items are aligned and have no additional margin or padding */
+ion-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  --min-height: 0; /* Reduce the default height of ion-item if needed */
+  display: flex;
+  align-items: center;
+}
+
+/* Align the icons with the text */
+ion-icon {
+  margin-right: 16px; /* Adjust the spacing between icon and text */
+}
+
+/* Remove the default padding from ion-list to align with the header */
+ion-list {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Align the title and other texts */
+ion-title,
+.list-header,
+.list-item-text {
+  text-align: left;
+  padding-left: 16px; /* Adjust this to align with the rest of the content */
+}
+
+/* Adjust toggle to align with the items */
+ion-toggle {
+  margin-right: 16px; /* Adjust this to match the overall alignment */
+}
+
+.PEIMG {
+    margin-right: 10px;
+}
+
+.VIMG {
+    margin-right: 2px;
+}
+
+.AMHeader {
+    margin-top: 1rem;
+}
+
+.MIMG {
+    margin-right: 11px;
+}

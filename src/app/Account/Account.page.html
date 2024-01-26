@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Account </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()"
+        ><ion-icon name="log-out-outline"></ion-icon>Logout</ion-button
+      >
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="profile-header">
+    <div class="profile-pic-container">
+      <ion-icon name="person-circle-outline" class="profile-pic"></ion-icon>
+      <div class="reward-progress">24/100</div>
+      <div class="next-reward">To the next reward 🎉</div>
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-list-header> Personal Information </ion-list-header>
+    <ion-item>
+      <ion-icon name="qr-code-outline" slot="start"></ion-icon>
+      Scan QR
+    </ion-item>
+    <ion-item>
+      <ion-icon name="settings-outline" slot="start"></ion-icon>
+      App Settings
+    </ion-item>
+    <ion-item>
+      <ion-icon name="refresh-circle-outline" slot="start"></ion-icon>
+      Recycling History
+    </ion-item>
+    <ion-item>
+      <ion-button routerLink="/referral">
+        <img src="/assets/accounts/Planet earth.png/" slot="start" class="PEIMG"/>
+        Invite Your Friends
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button>
+        <img src="/assets/accounts/Verified.png/" slot="start" class="VIMG" />
+        Apply For Verified Seller
+      </ion-button>
+    </ion-item>
+
+    <ion-list-header class="AMHeader"> Account Management </ion-list-header>
+    <ion-item>
+      <ion-icon name="key-outline" slot="start"></ion-icon>
+      Change Password
+    </ion-item>
+    <ion-item
+      ><img src="/assets/accounts/mobile.png/" class="MIMG" />
+      <ion-toggle slot="end"></ion-toggle>
+      Dark Theme
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,51 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Product Image -->
+  <img [src]="product?.image" alt="{{ product?.name }}" class="product-image">
+
+  <div class="product-details-container">
+    <h2 class="product-name">{{ product?.name }}</h2>
+    
+    <!-- ... other details ... -->
+
+    <div class="product-info">
+      <h3>Condition</h3>
+      <p>{{ product?.condition }}</p>
+      <h3>Deal Method</h3>
+      <p>{{ product?.dealMethod }}</p>
+      <h3>Details</h3>
+      <p class="productDetails">{{ product?.details }}</p>
+    </div>
+
+    <div class="productSeller">
+      Listed by {{ product?.seller }}
+    </div>
+  </div>
+</ion-content>
+
+<!-- ... action buttons ... -->
+
+
+<div class="action-buttons">
+  <ion-button class="chat-button">
+    Chat
+  </ion-button>
+  <ion-button class="buy-button">
+    Buy
+  </ion-button>
+</div>

@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ChatbotTitle">E-CO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="ChatbotTitle">E-CO</ion-title>
+      <ion-buttons slot="primary"> </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="chat-container">
+    <div class="chat-responses">
+      <div
+        *ngFor="let message of messages"
+        class="message-container"
+        [class.user-message]="message.user === 'You'"
+      >
+        <img
+          *ngIf="message.user === 'E-CO Bot' && message.image"
+          [src]="message.image"
+          alt="{{ message.user }}"
+          class="chatbot-image"
+        />
+        <span class="messageContent">
+          {{ message.content }}
+          <span class="messageDate"> {{ message.date }} </span>
+        </span>
+      </div>
+      <div *ngIf="loading" class="message-container typing-indicator-container">
+        <img
+          src="/assets/chatbot/waiting-texting.gif"
+          alt="Typing..."
+          class="typing-indicator"
+        />
+      </div>
+    </div>
+
+    <div class="input-container">
+      <ion-item lines="none">
+        <ion-input
+          [(ngModel)]="userInput"
+          placeholder="Ask me about EcoThreads related questions or type 'live' to speak to a live operator. What can I assist you with today?"
+        ></ion-input>
+      </ion-item>
+      <ion-button (click)="sendToChatbot()"
+        ><ion-icon name="send"></ion-icon
+      ></ion-button>
+    </div>
+  </div>
+</ion-content>

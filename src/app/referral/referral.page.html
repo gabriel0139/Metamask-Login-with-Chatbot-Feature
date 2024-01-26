@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Referral</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="referral-card">
+    <img src="/assets/accounts/refer.png" alt="Refer friends" />
+
+    <ion-card-content>
+      <h2>
+        Get 100 points when the person you invite donates 10 pieces of clothing
+      </h2>
+      <p>Your referral link:</p>
+      <ion-input [value]="referralLink" readonly></ion-input>
+      <ion-button expand="block" (click)="copyReferralLink()"
+        >Copy Link</ion-button
+      >
+      <ion-button expand="block" color="success" (click)="inviteContacts()">
+        Invite Your Contacts
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

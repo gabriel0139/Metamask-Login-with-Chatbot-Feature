@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Product</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="addProductForm">
+  <!-- Photo Upload Section -->
+  <ion-item>
+    <img [src]="photo">
+    </ion-item>
+  <div class="photo-upload">
+    <ion-button fill="clear" class="photo-button" id="camera-button" (click)="takePhoto()">
+      <ion-icon slot="icon-only" name="add-circle-outline"></ion-icon>
+    </ion-button>
+    <p class="photo-text">Tap to add photos, max 5 photos</p>
+  </div>
+
+  <!-- Category Section -->
+<div class="category-section">
+  <ion-chip class="category" (click)="selectCategory('BT')" [class.selected]="selectedCategory === 'BT'">
+    <img src="../../assets/category/BT.png">
+    <ion-label>Barter Trade</ion-label>
+  </ion-chip>
+  <ion-chip class="category" (click)="selectCategory('BS')" [class.selected]="selectedCategory === 'BS'">
+    <img src="../../assets/category/BS.png">
+    <ion-label>Buy & Sell</ion-label>
+  </ion-chip>
+</div>
+
+  <!-- Form Section -->
+  <div class="FormSection">
+  <ion-list class="input-fields-list">
+    <ion-item class="input-field">
+      <ion-label position="floating">Item Name</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item class="input-field">
+      <ion-label position="floating">Item Price</ion-label>
+      <ion-input type="number" formControlName="price"></ion-input>
+    </ion-item>
+    <ion-item class="input-field">
+      <ion-label position="floating">Select Condition Of Clothes</ion-label>
+      <ion-select formControlName="condition">
+        <ion-select-option value="new" *ngFor="let option of conditions" [value]="option">
+          {{option}}
+        </ion-select-option>
+
+      </ion-select>
+    </ion-item>
+    <ion-item class="input-field" >
+      <ion-label position="floating">Product Details (size, design etc)</ion-label>
+      <ion-textarea formControlName="details"></ion-textarea>
+    </ion-item>
+  </ion-list>
+</div>
+  <!-- Submit Button -->
+  <div class="SubmitButtonCenter">
+  <ion-button expand="block" class="submit-button" (click)="add()">List It!</ion-button>
+  </div>
+</form>
+</ion-content>

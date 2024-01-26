@@ -1,0 +1,112 @@
+/* General Content Styles */
+ion-content {
+  --background: #fff; /* Change this to the desired background color or add a background image */
+  padding: 16px; /* This adds padding around the entire content area */
+}
+
+/* Photo Upload Section */
+.photo-upload {
+  text-align: center;
+  margin-bottom: 24px; /* Increased space below the photo upload section */
+}
+
+.photo-button {
+  margin-top: 40px;
+  --background: #fff;
+  border: 2px dashed #000;
+  border-radius: 12px;
+  width: 100px; /* Define size as needed */
+  height: 100px; /* Define size as needed */
+}
+
+.photo-text {
+  color: #000;
+  padding-top: 8px;
+}
+
+/* Category Section */
+.category-section {
+  display: flex;
+  justify-content: center; /* Aligns the chips to the center of the container */
+  align-items: center; /* Centers the chips vertically */
+  margin-bottom: 24px; /* Adjust the space below the category section as needed */
+}
+
+img {
+  margin-right: 8px;
+}
+
+.category {
+  --background: #fff;
+  --color: #000;
+  --border-radius: 18px;
+  --border-width: 0;
+  border: 2px solid #ddd;
+  font-weight: 600;
+  margin-left: 8px; /* Space between the chips */
+  margin-right: 8px; /* Space between the chips */
+}
+
+/* To remove space between chips, set margin-left and margin-right to 0 for adjacent chips */
+.category:first-child {
+  margin-right: 10px; /* Remove space on the right side of the first chip */
+}
+
+.category:last-child {
+  margin-left: 0; /* Remove space on the left side of the last chip */
+}
+
+/* If you have more than two chips and want them all to stick together */
+.category:not(:first-child) {
+  margin-left: 0; /* Remove space on the left side of all chips except the first */
+}
+
+.category.selected {
+  --background: #4DB651;
+  --color: #fff;
+  border-color: #4DB651;
+}
+
+/* Form Section */
+.input-fields-list {
+  justify-content: center; /* Aligns the chips to the center of the container */
+  margin-top: 0; /* Removed the top margin since the content padding is applied */
+}
+
+.input-field {
+  justify-content: center; /* Aligns the chips to the center of the container */
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --border-radius: 12px;
+  --min-height: 10px;
+  --border-color: transparent;
+  --border-width: 0;
+  margin-bottom: 16px; /* Space between form items */
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.FormSection{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.SubmitButtonCenter {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* Submit Button */
+.submit-button {
+  --background: #4DB651;
+  margin-top: 0px; /* Increased space above the submit button */
+  border-radius: 12px;
+  width: 400px;
+  height: 45px;
+  --border-radius: 10px;
+  
+}
+
+

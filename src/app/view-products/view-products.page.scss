@@ -1,0 +1,133 @@
+ion-content {
+  --background: #fff;
+}
+
+.product-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-details-container {
+  padding: 16px;
+}
+
+.price-and-category {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.product-price {
+  font-size: 20px;
+  color: black;/* Or any color that matches your theme */
+  border-radius: 10px;
+  background-color: #D6EFD2;
+  width: auto;/* Size of the badge */
+  height: 43px;/* Size of the badge */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-right : 10px;
+}
+
+.category-badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  /* Size of the badge */
+  height: 43px;
+  /* Size of the badge */
+  border-radius: 10px;
+  background-color: #D6EFD2;
+  padding: 10px;
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+h2.product-name {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #000;
+  /* Or any color that matches your theme */
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: #D6EFD2;
+  /* Light gray background */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: auto;
+  /* Size of the badge */
+  height: 43px;
+  /* Size of the badge */
+  display: inline-flex;
+  align-items: center;
+}
+
+.productDetails {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.productSeller {
+  margin-bottom: 70px;
+  font-size: 15px;
+}
+
+/*CSS for the floating buy and chat buttons */
+.action-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 999;
+}
+
+.chat-button, .buy-button {
+  flex-grow: 1;
+  margin: 10px;
+  --border-radius: 100px;
+  height: 50px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600; 
+  line-height: normal;
+}
+
+/* Additional styling for the buttons if needed */
+.chat-button {
+  --background: #D6EFD2; /* Adjust to your desired color */
+  --color: black; /* Adjust to your desired color */
+}
+
+.buy-button {
+  --background: #4DB651; /* Adjust to your desired color */
+  --color: white; /* Adjust to your desired color */
+}

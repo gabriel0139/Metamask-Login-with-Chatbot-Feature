@@ -1,0 +1,39 @@
+.referral-card {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: -1px; /* Align with the card without space */
+    }
+  
+    ion-card-content {
+      --background: #ffffff; /* or any color you want for the card content background */
+  
+      h2 {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+      }
+  
+      p {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+      }
+  
+      ion-input {
+        margin-bottom: 1em;
+        --padding-start: 10px; /* Space inside the input */
+        --padding-end: 10px;
+        --border-radius: 10px; /* Rounded corners */
+      }
+  
+      ion-button {
+        margin-top: 10px;
+      }
+    }
+  }
+  
+  /* Add more styles if needed */
+  
