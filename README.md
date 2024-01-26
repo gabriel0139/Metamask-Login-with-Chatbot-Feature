@@ -45,4 +45,5 @@ To use this feature, simply log in using your MetaMask wallet. If your wallet is
 
 ## Contact
 Email: gabrieljohn.liew@gmail.com
+
 Project Link: https://github.com/gabriel0139/Metamask-Login-with-Chatbot-Feature.git
