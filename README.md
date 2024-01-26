@@ -42,3 +42,7 @@ To use this feature, simply log in using your MetaMask wallet. If your wallet is
 
 ### How To Disconnect Metamask
 6. Disconnect via Metamask to fully logout ('https://www.youtube.com/watch?v=RL7LV5Tlc5c', you can also click the 'Globe' icon to remove the connection to the current site - src\assets\readme\disconnectWallet.png)
+
+## Contact
+Email: gabrieljohn.liew@gmail.com
+Project Link: https://github.com/gabriel0139/Metamask-Login-with-Chatbot-Feature.git
